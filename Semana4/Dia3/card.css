@@ -1,0 +1,117 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background:#eee;
+  font-family: sans-serif;
+}
+
+header{
+  height:54px;
+  background:orangered;
+  box-shadow:(0px 5px 12px gray);
+}
+
+.cards{
+  padding:20px 50px 50px 50px;
+  text-align: center;
+  /* flex */
+  display:flex;
+  justify-content: space-between;
+}
+
+.card{
+  height:400px;
+  width:300px;
+  background: white;
+  border-radius:5px;
+  margin:20px;
+}
+
+.card_imagen{
+  width:100%;
+  height:60%;
+  overflow:hidden;
+  position:relative;
+}
+
+.card_imagen img{
+  width:100%;
+  transform: translate(0, -60px);
+}
+
+.card_fotos{
+  position:absolute;
+  bottom:0;
+  background:orange;
+  color:white;
+  padding:10px;
+  border-radius:2px;
+}
+
+.card_fecha{
+  position:absolute;
+  width:40px;
+  height:50px;
+  top:10px;
+  right:10px;
+  background:orangered;
+  color:white;
+  padding-top:7px;
+  border-radius:5px;
+}
+
+.card_info{
+  padding:20px;
+  position:relative;
+  height:40%;
+}
+
+.card_subtitulo{
+  color:orangered;
+  margin-top:4px;
+}
+
+.card_descripcion{
+  margin-top:5px;
+  font-size:14px;
+  color:#333;
+  /* texto transparente */
+  visibility: hidden;
+  opacity:0;
+}
+
+/* Aqui comienza la magia */
+
+.card:hover .card_imagen{
+  height:40%;
+}
+
+.card:hover .card_imagen img{
+  /* filter es un filtro para imagenes que puede modificar cosas como la saturación, el brillo, la opacidad, blur */
+  /* brightness(0 a 1) o de 0% a 100% */
+  filter: brightness(0.5);
+}
+
+.card:hover .card_info{
+  height:60%;
+}
+
+.card:hover .card_descripcion{
+  visibility: visible;
+  opacity: 1;
+}
+
+.card:hover{
+  box-shadow: 0 0 20px lightgrey;
+  transform: scale(1.05);
+}
+
+/* 1. Selecciono .card pero también!
+    2. voy a seleccionar todos los elementos que esten dentro de card  */
+.card, .card *{
+  transition: all 0.2s ease;
+}
