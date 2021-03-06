@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=PT+Sans+Caption:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* Propiedad temporal */
+            /* border: 1px solid red; */
+        }
+
+        body{
+            background: #35507D;
+        }
+        .contenedor{
+            width: 1200px;
+            /* aqui centra de forma horizontal */
+            margin: 0 auto;
+        }
+        .logo{
+            font-family: 'Kaushan Script', cursive;
+            font-size: 32px;
+        }
+        ul{
+            display: flex;
+            width: 500px;
+            justify-content: space-around;
+        }
+        li{
+            list-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 8px;
+        }
+        /* Hover aplica cuando el mouse este por encima */
+        li:hover{
+            color: #4287B5;
+            /* que colocque una manito para ver que es un menu */
+            cursor: pointer;
+        }
+        ul>li:nth-child(5){
+            border: 2px solid #4287B5;
+            border-radius: 15px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0; /* esto hace espacios arriba y abajo y cero a los costados*/
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <nav>
+            <div class="logo">
+                ARIAS FRANCIA
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Inicio</li>
+                    <li>Nosotros</li>
+                    <li>Registrate</li>
+                    <li>Link4</li>
+                    <li>Link5</li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

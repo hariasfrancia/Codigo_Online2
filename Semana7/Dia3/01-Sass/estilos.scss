@@ -1,0 +1,51 @@
+// body{
+//     background: skyblue;
+// }
+
+// // variables, se tiene que anteponer el simbolo de $nombrevariable
+// $colorprimario: #4432f4;
+// $fuenteprimaria: Arial;
+// $tamaniogeneral: 16px;
+
+
+
+
+// imports, importo de la hoja _globals.scss
+@import "./components/globals";
+
+
+.texto{
+    color: $colorprimario;
+    font-family: $fuenteprimaria;
+    font-size: $tamaniogeneral;
+}
+
+.btn{
+    background: $colorprimario;
+    font-size: $tamaniogeneral * 0.75;
+}
+
+// anidacion
+// BEM BLOCK ELEMENT MODIFIER
+.perfil{//block-bloque
+    &__imagen{//elemento
+        border-radius: 25px;
+
+        &:hover{// hover es el modificador - modifier
+            box-shadow: 4px 4px 4px black;
+        }
+    }
+}
+
+//mixins, es como una funcion que recibe argumentos
+//@mixin nombre_mixin
+
+@mixin cuadrado($tamanio, $tamanio2){
+    width: $tamanio;
+    height: $tamanio;
+}
+
+.cuadrado{
+    @include cuadrado(200px, 300px);
+    border: 2px solid orange;
+}

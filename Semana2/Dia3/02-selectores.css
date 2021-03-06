@@ -1,0 +1,22 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    background: aqua;
+}
+
+/* esto es una clase, funciona para varios elemntos
+
+.nombre_clase
+*/
+.resaltar{
+    background: yellow;
+}
+
+.textorojo{
+    color: red;
+}
+/* A los "ID" se les llama por numeral */
+#importante{
+    border: 3px solid red;
+}

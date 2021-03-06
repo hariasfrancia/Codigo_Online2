@@ -1,0 +1,37 @@
+nav{
+    background: coral;
+}
+
+nav li{/*aplica a todos los hijos de li*/
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+/* @media pantallas el ancho de la pantalla sea de un maximo de 420 px */
+@media screen and (max-width:420px){
+    /* las propiedades y cvalores que yo ponga dentro de esta media query va aplicarse siempre y cuando se cumpla la regla que he definido que en este caso es 420px */
+    nav{
+        background: blue;
+    }
+    ul{
+        /* display: block; */
+        flex-direction: column;
+    }
+    ul>li{
+        font-size: 26px;
+    }
+    
+}
+@media screen and (max-width:320px) {
+    nav{
+        background: purple;
+    } 
+}

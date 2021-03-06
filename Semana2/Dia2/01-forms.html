@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        <h1>Formularios</h1>
+    </head>
+    <main>
+        <section>
+            <h2>Registro de Usuarios</h2>
+            <form>
+                <label for="nombres">Nombres</label> <!-- Indicar con que nombre esta rela -->
+                <input 
+                    type="text"
+                    placeholder="Ingresa tus nombres completos"
+                    id="nombres"     
+                    pattern="[A-Z a-z]+"
+                >
+                <br>
+                <label for="apellidos">Apellidos</label>
+                <input 
+                    type="text"
+                    placeholder="Ingrese apellidos"
+                    id="apellidos"
+                    pattern="[A-Z a-z]{3,30}"
+                >
+                <br>
+                <label for="">Correo</label>
+                <input 
+                    type="email"
+                    placeholder="Ingrese un correo valido"
+                >
+                <br>
+                <label for="">Contraseña</label>
+                <input 
+                    type="password"
+                    placeholder="Ingrese una contraseña"
+                    required
+                >
+                <br>
+                <label for="">Edad</label>
+                <input 
+                    type="number"
+                    placeholder="Ingrese su edad"
+                    min="1"
+                    max="120"
+                >
+                <br>
+                <h4>Datos Adicionales</h4>
+                <label for="">Fecha de Nacimiento</label>
+                <input 
+                    type="date" name="" id=""
+                >
+                <br>
+                <label for="">Teléfono</label>
+                <input 
+                    type="telf"
+                    placeholder="Ingrese su teléfono"
+                >
+                <br>
+                <label for="">Género</label>
+                <br>
+                <input type="radio" name="genero" value="M">Masculino
+                <br>
+                <input type="radio" name="genero" value="F">Femenino
+                <br>
+                <input type="radio" name="genero" value="ND">Prefiero no divulgarlo
+                <br>
+                <label for="">Departamento</label>
+                <select name="" id="">
+                    <option value="" disabled selected>Seleccionar...</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AN">Ancash</option>
+                    <option value="AP">Apurimac</option>
+                    <option value="CS">Cusco</option>
+                    <option value="LI" disabled>Lima</option>
+                    <option value="jm">-Jesús María</option>
+                    <option value="sm">-San Miguel</option>
+                </select>
+                <br>
+                <label for="">Hobbies</label>
+                <br>
+                <label for="">Leer</label>
+                <input type="checkbox" value="leer"> <br>
+                <label for="">Jugar Futbol</label>
+                <input type="checkbox" value="futbol"><br>
+                <label for="">Tocar Guitarra</label>
+                <input type="checkbox" value="guitarra"><br>
+                <label for="">Escuchar música</label>
+                <input type="checkbox" value="musica">
+                <br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Describete"></textarea>
+                <br>
+                <label for="">Sube tu foto:</label>
+                <input type="file">
+                <hr>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </form>
+        </section>
+    </main>    
+</body>
+</html>

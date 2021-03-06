@@ -1,0 +1,27 @@
+li:nth-child(1){
+    color: red;
+}
+
+li:nth-child(2){
+    color: blue;
+}
+
+li:nth-child(3){
+    color: #3f00ad;
+}
+
+li:nth-child(4){
+    color: #22ccf4;
+}
+
+li:nth-child(5){
+    color: rgb(37, 137, 231);
+}
+
+li:nth-child(6){
+    background: rgba(199, 21, 21, 0.5);
+}
+
+li:nth-child(7){
+    color: hsl(0, 50%, 25%);     
+}

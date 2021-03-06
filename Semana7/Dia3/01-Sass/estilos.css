@@ -1,0 +1,27 @@
+body {
+  background: skyblue;
+}
+
+.texto {
+  color: #4432f4;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+.btn {
+  background: #4432f4;
+  font-size: 12px;
+}
+
+.perfil__imagen {
+  border-radius: 25px;
+}
+.perfil__imagen:hover {
+  box-shadow: 4px 4px 4px black;
+}
+
+.cuadrado {
+  width: 200px;
+  height: 200px;
+  border: 2px solid orange;
+}

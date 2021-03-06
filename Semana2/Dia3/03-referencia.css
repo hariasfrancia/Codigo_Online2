@@ -1,0 +1,76 @@
+/* referencias */
+/* Estoy seleccionando todos los H1 y todos los article */
+h1, article{
+    background: skyblue;
+}
+
+/* Esto va aplicar a todos los article que sean hijos de section */
+section article{
+    color: blue;
+}
+
+/* Estoy seleccionando solo los primeros hijos que tiene la etiqueta OL */
+
+ol>li{
+    font-family: Arial, Helvetica, sans-serif;
+    color: orangered;
+}
+
+ol>ul>li{
+    color: violet;
+}
+
+ol>ul>li>span{
+    background: yellow;
+}
+
+ol>ul>li>#resaltar{
+    background: turquoise;
+}
+
+/* Este estilo aplica al primer P que ete debajo de DIV al primer elemento debajo de otro */
+div+p{
+    background: blueviolet;
+    color:  white;
+}
+
+.seccion1>h2{
+    border: 2px solid green;
+}
+
+h2{
+    border: 3px solid peru
+    !important;    
+}
+
+/* Pseudoclases */
+/* He escogido un elemento que sea hijo y que s¿este en la posicion 3 */
+p:nth-child(3){
+    font-style: italic;
+    font-weight: bold;
+    color: tomato;
+}
+
+p:first-child{
+    color: salmon;
+    text-decoration: underline;
+    font-size: 16px !important;
+}
+
+/* Todos los elemntos impares que seleccione */
+tr:nth-child(odd){
+    background: springgreen;
+}
+
+tr:nth-child(even){
+    background: lightcoral;
+}
+
+thead tr:nth-child(1){
+    background-color: darkblue;
+    color: white;
+}
+
+p:nth-of-type(1){
+    font-size: 34px;
+}

@@ -1,0 +1,69 @@
+.navbar{
+  font-family: 'Spartan', sans-serif;
+}
+
+.card{
+  font-family: 'Spartan', sans-serif;
+}
+
+.card-img-top{
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+/* Esta parte es Detalle View */
+.titulo-detalle{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Spartan', sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.titulo-detalle h1{
+  transform: translateY(5px);
+}
+
+.contenido-detalle{
+  font-family: 'Spartan' sans-serif;
+}
+
+.contenido-detalle h5{
+  font-weight: bold;
+  color: #444;
+}
+
+.contenido-detalle .lead{
+  font-size: 16px;
+}
+
+.detalle-carrito{
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.detalle-carrito span{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.detalle-carrito button{
+  height: 60px;
+  transform: translateY(-5px)
+}
+
+.detalle-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.detalle-info div i{
+  margin-right: 8px;
+  font-size: 16px;
+}

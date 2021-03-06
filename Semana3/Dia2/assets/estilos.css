@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+
+/* instalar fuentes de un archivo */
+
+@font-face{
+    font-family: 'Inter';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../assets/fonts/Inter-Regular.woff');
+}
+.contenedor{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* paso nav */
+nav{
+    display: flex; /* seaparados*/
+    justify-content: space-between;
+    font-family: 'Inter';
+}
+
+ul{
+    display: flex;
+    width: 600px;
+    justify-content: space-evenly;
+    
+}
+.menu li{
+    list-style: none; /*quito las viñetas*/
+    margin: 10px 0;
+}
+
+.menu button:nth-of-type(1){
+    color: #FC8F1E;
+    background: white;
+    border: 1px solid #FC8F1E;
+    border-radius: 5px;
+    padding: 5px;
+}

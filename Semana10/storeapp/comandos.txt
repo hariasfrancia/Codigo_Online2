@@ -1,0 +1,29 @@
+
+PAGINA Y COMANDO DIA: 26-02-2021
+=====================================
+
+http://localhost:3000/dashboard
+https://sweetalert2.github.io/
+
+
+npm i sweetalert2
+
+
+PARA INSTALAR MATERIAL-UI
+============================
+npm install @material-ui/core
+npm install @material-ui/data-grid
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+creo registerview dentro de View
+
+==========================================
+npm install react-hook-form
+storeapp>npm install react-hook-form
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
