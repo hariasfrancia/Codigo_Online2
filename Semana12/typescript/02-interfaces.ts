@@ -14,6 +14,6 @@ interface iGato {
 let gatita:iGato = {
     nombre:"Gatita",
     raza:"Siames",
-    edad:3
+    edad:4
 }
 
