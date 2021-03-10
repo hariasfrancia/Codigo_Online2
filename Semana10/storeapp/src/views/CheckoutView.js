@@ -1,14 +1,15 @@
-import React,{useContext, useState} from 'react'
+import React,{useContext, useState, useEffect} from 'react'
 import {CarritoContext} from '../context/carritoContext'
 import {useForm} from 'react-hook-form'
 import {MapContainer, TileLayer, Marker, Popup, MapConsumer} from 'react-leaflet'
 import L from 'leaflet' // se refiere a toda la libreria de leaflet
-
+import {getVentas, registrarVenta} from '../services/ventasService'
 
 export default function CheckoutView() {
     
 
     const [coords, setCoords] = useState([-16.42, -71.51])
+    const [ventas, setVentas] = useState([])
 
     const {carrito} = useContext(CarritoContext)
     let carritoTmp = [...carrito]
@@ -27,10 +28,24 @@ export default function CheckoutView() {
     let {register, handleSubmit, errors} = useForm()
 
     let escucharSubmit = (data) => {
-        console.log(data)
+        // console.log(data)
+        registrarVenta(data).then((nuevaVenta) => {
+            console.log(nuevaVenta)
+        })
         // esta funcion se encarga de manejar el submit
     }
 
+    let obtenerVentas = () => {
+        getVentas().then((misVentas) => {
+            setVentas(misVentas)
+        })
+    }
+
+    useEffect(() => {
+        obtenerVentas()
+    },[])
+
+    
     return (
         <div>
             <h1 className="display-6">Finalizar Compra</h1>
